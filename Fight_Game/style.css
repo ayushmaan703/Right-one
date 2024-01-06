@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.p1,
+.p2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attack {
+  display: flex;
+  align-items: center;
+}
+
+.heal {
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.showresult {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  width: 50%;
+  padding-left:133px ;
+  font-size: 2rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button{
+  margin: auto;
+    padding: 8px 32px 8px 32px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#sim{
+  margin: 0px 40px 0px 40px;
+}
+.health{
+  font-size: 1.5rem;
+
+}
