@@ -1,1 +1,5 @@
 print("hello world")
+name = input("enter your name : \n")
+age = int(input("enter age "))
+print(name)
+print(type(age),"\t",age)
