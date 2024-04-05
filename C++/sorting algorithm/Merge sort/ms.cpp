@@ -1,9 +1,8 @@
-// this is for sorting in assending order
 #include <iostream>
 using namespace std;
 void merge(int arr[], int startpoint, int mid, int endpoint)
 {
-    int i=0, j=0, k = startpoint;
+    int i = 0, j = 0, k = startpoint;
     int tempArr1Size = mid - startpoint + 1;
     int tempArr2Size = endpoint - mid;
     int arr1[tempArr1Size];
@@ -16,7 +15,7 @@ void merge(int arr[], int startpoint, int mid, int endpoint)
     {
         arr2[i] = arr[mid + 1 + i];
     }
-    i=0, j=0;
+    i = 0, j = 0;
     while (i < tempArr1Size && j < tempArr2Size)
     {
         if (arr1[i] < arr2[j])
@@ -39,7 +38,7 @@ void merge(int arr[], int startpoint, int mid, int endpoint)
     }
 }
 void mergeSort(int arr[], int startpoint, int endpoint)
-{ 
+{
     if (startpoint >= endpoint)
         return;
     int mid = (startpoint + endpoint) / 2;
