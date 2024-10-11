@@ -120,6 +120,19 @@ public:
         Node *newHead = prev;
         return newHead;
     }
+    int search(int k)
+    {
+        Node *temp = head;
+        int loc = 0;
+        while (temp != NULL)
+        {
+            if (temp->value == k)
+                return loc;
+            loc++;
+            temp = temp->next;
+        }
+        return -1;
+    }
     void display()
     {
         Node *temp = head;
